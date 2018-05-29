@@ -24,7 +24,7 @@ defineClass('JSViewController : UIViewController', {
             // Do any additional setup after loading the view.
             {
             console.log("[yqing]<main.js viewDidLoad> success! 20180529-1");
-            var lab = UILabel.new();
+            var lab = UILabel.alloc().init();
             lab.setBackgroundColor(UIColor.lightGrayColor());
             lab.setFrame(CGRectMake(10, 44, 250, 40));
             lab.setText("JSViewController");
