@@ -18,7 +18,7 @@ defineClass('ViewController', {
 });
 
 require('UILabel,UIColor');
-defineClass('JSViewController', {
+defineClass('JSViewController : UIViewController', {
             viewDidLoad: function() {
             self.super().viewDidLoad();
             // Do any additional setup after loading the view.
