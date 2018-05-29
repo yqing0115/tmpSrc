@@ -17,6 +17,25 @@ defineClass('ViewController', {
     },
 });
 
+require('UILabel,UIColor');
+defineClass('JSViewController', {
+            viewDidLoad: function() {
+            self.super().viewDidLoad();
+            // Do any additional setup after loading the view.
+            {
+            var lab = UILabel.new();
+            lab.setBackgroundColor(UIColor.lightGrayColor());
+            lab.setFrame(CGRectMake(10, 44, 250, 40));
+            lab.setText("JSViewController");
+            self.view().addSubview(lab);
+            }
+            },
+            didReceiveMemoryWarning: function() {
+            self.super().didReceiveMemoryWarning();
+            // Dispose of any resources that can be recreated.
+            },
+            });
+
 require('UIWindow,UIScreen,UIColor,YQViewController,JSViewController');
 defineClass('AppDelegate', {
     gotoRootViewController: function() {
@@ -33,21 +52,3 @@ defineClass('AppDelegate', {
     },
 });
 
-require('UILabel,UIColor');
-defineClass('JSViewController', {
-    viewDidLoad: function() {
-        self.super().viewDidLoad();
-            // Do any additional setup after loading the view.
-        {
-            var lab = UILabel.new();
-            lab.setBackgroundColor(UIColor.lightGrayColor());
-            lab.setFrame(CGRectMake(10, 44, 250, 40));
-            lab.setText("JSViewController");
-            self.view().addSubview(lab);
-        }
-    },
-    didReceiveMemoryWarning: function() {
-        self.super().didReceiveMemoryWarning();
-        // Dispose of any resources that can be recreated.
-    },
-});
