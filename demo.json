@@ -1,0 +1,21 @@
+{
+  "url": "http://qqe2.com",
+  "name": "欢迎使用JSON在线解析编辑器",
+  "dict1": {
+    "JSON校验": "http://jsonlint.qqe2.com/",
+    "Cron生成": "http://cron.qqe2.com/",
+    "JS加密解密": "http://edit.qqe2.com/"
+  },
+  "boolean": true,
+  "null": null,
+  "number": 123,
+  "dict2": {
+    "a": "b",
+    "c": "d",
+    "e": "f"
+  },
+  "array1" : [
+    "num0",
+    "num1"
+    ]
+}
